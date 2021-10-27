@@ -1,6 +1,5 @@
-const Discord = require("discord.js")
-
-module.exports = async (client) => {
-    console.log("BOT ELÉrHETŐ HÁLA ISteNNEK VÉGRE MEGY!")
-    
+module.exports = async (bot) => {
+    console.log(`${bot.user.username} elindult!`)
+    bot.user.setStatus("online");
+    bot.user.setActivity(`Counter-Strike: Global Offensive`, {type: "PLAYING"})   
 }
